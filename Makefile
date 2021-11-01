@@ -15,7 +15,7 @@ all: clean build
 build: main
 
 main:
-	go build -a -trimpath\
+	export GO111MODULE=off; go build -a -trimpath\
 	 -ldflags "-X github.com/pydio/cells/common.version=${CELLS_VERSION}\
 	 -X github.com/pydio/cells/common.BuildStamp=${TODAY}\
 	 -X github.com/pydio/cells/common.BuildRevision=${GITREV}\
@@ -36,7 +36,7 @@ xgo:
 	 ${GOPATH}/src/github.com/pydio/cells
 
 dev:
-	go build\
+	export GO111MODULE=off; go build\
 	 -tags dev\
          -gcflags "all=-N -l"\
 	 -ldflags "-X github.com/pydio/cells/common.version=${DEV_VERSION}\
