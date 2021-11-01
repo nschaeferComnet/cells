@@ -46,6 +46,9 @@ dev:
 	 -o cells\
 	 .
 
+test:
+	export GO111MODULE=off; go test ./...
+
 start:
 	./cells start
 
