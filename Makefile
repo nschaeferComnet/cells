@@ -25,7 +25,8 @@ main:
 	 .
 
 xgo:
-	${GOPATH}/bin/xgo -go 1.15 \
+	export GO111MODULE=off;
+	${GOPATH}/bin/xgo -go 1.16 \
 	 --image ${XGO_IMAGE} \
 	 --targets ${XGO_TARGETS} \
 	 -ldflags "-X github.com/pydio/cells/common.version=${CELLS_VERSION}\
