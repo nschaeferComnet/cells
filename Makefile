@@ -6,7 +6,7 @@ GITREV:=$(shell git rev-parse HEAD)
 CELLS_VERSION?="${DEV_VERSION}.${TIMESTAMP}"
 
 XGO_TARGETS?="linux/amd64,darwin/amd64,windows/amd64"
-XGO_IMAGE?=pydio/xgo:latest
+XGO_IMAGE?=techknowlogick/xgo:go-1.16.x
 
 .PHONY: all clean build main dev
 
@@ -37,9 +37,8 @@ xgo:
 	 ${GOPATH}/src/github.com/pydio/cells
 
 dev:
-	export GO111MODULE=off; go build\
-	 -tags dev\
-         -gcflags "all=-N -l"\
+	export GO111MODULE=off; 
+	go build -tags dev -gcflags "all=-N -l" \
 	 -ldflags "-X github.com/pydio/cells/common.version=${DEV_VERSION}\
 	 -X github.com/pydio/cells/common.BuildStamp=2018-01-01T00:00:00\
 	 -X github.com/pydio/cells/common.BuildRevision=dev\
