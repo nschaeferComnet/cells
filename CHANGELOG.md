@@ -1,44 +1,33 @@
-# Changes between v4.0.0-alpha2 and v4.0.0-alpha3
+# Changes between v4.0.0-alpha3 and v4.0.0-beta1
 
-[See Full Changelog](https://github.com/pydio/cells/compare/v4.0.0-alpha2...v4.0.0-alpha3)
+[See Full Changelog](https://github.com/pydio/cells/compare/v4.0.0-alpha3...v4.0.0-beta1)
 
-- [#93830a2](https://github.com/pydio/cells/commit/93830a2fe9e26990a72a567c8ca70d1ec5fd3244): Remove line
-- [#c971b8e](https://github.com/pydio/cells/commit/c971b8e8e648542e443527426ae7102d87396b14): Merge main
-- [#1f3f2f2](https://github.com/pydio/cells/commit/1f3f2f292323f5c66066ce455de0b6bbdb567dfa): Fix to gateway
-- [#2f48a41](https://github.com/pydio/cells/commit/2f48a4130745ebf39887b646d13864f5fe8154ac): Display hydra sql migration logs as info, to give more feedback to user on first (long) start
-- [#2bbeacd](https://github.com/pydio/cells/commit/2bbeacd230996075d74672ff7a5eb52c97c8da5e): Fix unmarshalling log "error" when not a string
-- [#61cf295](https://github.com/pydio/cells/commit/61cf29527444a62a2e5ad4798b2c8428e7e69692): oauth service watch config
-- [#6035434](https://github.com/pydio/cells/commit/6035434f10c741a771652920f7244b20d5ce6da3): Proxy custom ErrorHandler must return a 502 bad gateway
-- [#071496f](https://github.com/pydio/cells/commit/071496f13e84147cef3706e47cedb364cc858317): Collabora: add a parameter to skip tls verification in reverse proxy.
-- [#e3eaadf](https://github.com/pydio/cells/commit/e3eaadf5f4c9caf0abdf9dcf3180b3cfac3db077): Fixes to the registry and cleanup the start
-- [#e24374c](https://github.com/pydio/cells/commit/e24374c9f17f9c100e2195515d302bdc8db02457): Catch public client_id + unexpected Auth header on /oauth2/token request.
-- [#c99f3a3](https://github.com/pydio/cells/commit/c99f3a3052a4c479e13c15ea74de96314023fc3b): Apply same v4Signed treatment to v4Presigned
-- [#f31d150](https://github.com/pydio/cells/commit/f31d1500cb347314c4ba37298c38b433e3c51e47): Fix to service versions
-- [#4c36af4](https://github.com/pydio/cells/commit/4c36af4e5c1af3a6b4f62732e7ebae5bda8d1e17): Fix cells ps command
-- [#ec3e4c7](https://github.com/pydio/cells/commit/ec3e4c7040e826ff9ac337d67f1165e5e565c29b): Split updateServiceVersion from registered afterServe
-- [#6a6081e](https://github.com/pydio/cells/commit/6a6081e3b1cb4187f1488ae3e9923f4137e917d9): Update service status (as metadata) during the start sequence of each service. Check for real readyness before unlocking starting.html page.
-- [#8cedf9b](https://github.com/pydio/cells/commit/8cedf9b1e4f35df3b866181241b97e1af2d23a20): More Japanese
-- [#077b53b](https://github.com/pydio/cells/commit/077b53b980c71440887b4465a04db709423dc22c): More japanese
-- [#5af8815](https://github.com/pydio/cells/commit/5af88156298191386c4492a6c1b61bdecab0f754): Fix NoTLS+BindAll syntax (use http://:PORT instead of http://0.0.0.0:PORT in Caddy config)
-- [#9108bf5](https://github.com/pydio/cells/commit/9108bf519bf6bac7eb22bbd89e1b0b3088da3afa): Leave log service in the "main" plugins pool
-- [#9ae02d6](https://github.com/pydio/cells/commit/9ae02d6aa0c15d82b5debb738151bf84044a6ede): Adapt after fixing a typo in EN
-- [#de31051](https://github.com/pydio/cells/commit/de310516b9842c32ba32a51961972c6e15c671b9): Adapt after fixing a typo in EN
-- [#3aebcf6](https://github.com/pydio/cells/commit/3aebcf603b1ba7f4b56f0df2ce2d0c206c3cbf6b): Fix typo: Successfully rather than succesfully
-- [#4d6cc3d](https://github.com/pydio/cells/commit/4d6cc3de21ad183a3d9423079e347569bea2f69e): A few more messages + more Korean
-- [#4d1c299](https://github.com/pydio/cells/commit/4d1c299121f23c20259a8be34403f4a4105d8f97): A few more messages + more Korean
-- [#1b51013](https://github.com/pydio/cells/commit/1b510138e4007bc8fa90e055a4fa8e0d94bf0227): Update imports - Fix ux glitches
-- [#ff889f6](https://github.com/pydio/cells/commit/ff889f629a6af8b20fd5e9c3095075392ede6879): Removing update services list
-- [#13dbc1d](https://github.com/pydio/cells/commit/13dbc1dc45b0fcd023b735217cc473eb0e35a3fe): Fixing random lock in config during start
-- [#f948fb2](https://github.com/pydio/cells/commit/f948fb273e44f453e23ec8a939f03cecd0b34938): Fix data templates unit test
-- [#f804230](https://github.com/pydio/cells/commit/f8042304afa6979c0f2e90c52f6da82454b33862): Make SortabeList more modular
-- [#373aac1](https://github.com/pydio/cells/commit/373aac10485a0c6369dc855295adfd0f0b3da149): Protos: fix imports and openapiv2 json generation
-- [#2a1fbc3](https://github.com/pydio/cells/commit/2a1fbc3f606b3922732f17891c4ef5be56be83e4): Fixing broker test
-- [#c4d2e93](https://github.com/pydio/cells/commit/c4d2e9395c24f1cd0234e3afff2ceb98ea7b13bf): Single proxy connection
-- [#e808224](https://github.com/pydio/cells/commit/e80822481982ed4391721ec84bf426a1b40a6eca): Extract meta type editor from access.settings into meta.user plugin.
-- [#f6823cc](https://github.com/pydio/cells/commit/f6823ccbc0df562c70aa0003abc0e86d8129af67): Use :8002 as default for commands flags
-- [#bb0fc93](https://github.com/pydio/cells/commit/bb0fc931264f208cfa1ecbc4a775773abc40b554): ShareDialog: fix LabelPanel missing prop
-- [#75de99d](https://github.com/pydio/cells/commit/75de99d941e707ffda98afd68828fc54f235c445): Add a flag in userkey to handle master format change.
-- [#9bc193b](https://github.com/pydio/cells/commit/9bc193b9d63045d4a56a9c4d2c887f5c300a1dea): Fixing oauth migrations
-- [#dc47358](https://github.com/pydio/cells/commit/dc473580eddc499390689378d6fd7dbfd6517c0c): Optional loader in UserMetaPanel
-- [#da31aac](https://github.com/pydio/cells/commit/da31aac83f9364cf6abbc56bb6ac76d9162d6059): Fix possible lock in nodes.Pool, fix logger default context for forks.
-- [#e6baefe](https://github.com/pydio/cells/commit/e6baefec24a9231f2e69c909b4be859ec9394db2): Show service update version errors
+- [#befa804](https://github.com/pydio/cells/commit/befa804c524402ee332eb34c8f23dc1585a18862): Prepare caddy lines parsing - not enabled yet
+- [#996f8ab](https://github.com/pydio/cells/commit/996f8ab3cb4133754c80ef1de46c8158545e3840): Forgotten fmt.Println
+- [#15eba5d](https://github.com/pydio/cells/commit/15eba5db1abc0d7a45c7557a997b9808765e7edc): Detection private IP address
+- [#c596fa0](https://github.com/pydio/cells/commit/c596fa0e0c35212410c2fb57ee4a3fa1cfb91d85): 2 more strings + DE/FR, more translations in other languages
+- [#0a3a893](https://github.com/pydio/cells/commit/0a3a8936765485f7f304d96efd8bff54bd747494): 2 more strings + DE/FR translation and more translations in other languages
+- [#2781266](https://github.com/pydio/cells/commit/278126681d09a0409d5967f834acaba1673b9f5a): Fixing version timeout
+- [#07fde83](https://github.com/pydio/cells/commit/07fde838438f75ac127f37d2b1b359e621caf96a): Fix ux glitches
+- [#a3823c7](https://github.com/pydio/cells/commit/a3823c7d95480af2c123b8dfe11bb81f5ed6636d): Missing variant v2 in GroupInfo - Renable editor.browser
+- [#e541360](https://github.com/pydio/cells/commit/e541360befc35f27d22bf119f28668c541da50cb): Fix idm_policy migrations : we have to split maria from mysql
+- [#43f7e2d](https://github.com/pydio/cells/commit/43f7e2d7870ec667f9e80bddf44e0b8780708e2e): Fix restart after install
+- [#7baddd2](https://github.com/pydio/cells/commit/7baddd286cff78db479d95554005c0e8d076b97b): Browser Install: configure mongo in Advanced Settings
+- [#56c453e](https://github.com/pydio/cells/commit/56c453ec9614b020070f3c9f1145853c533801b4): Mongo cli & browser install
+- [#4db9b45](https://github.com/pydio/cells/commit/4db9b45a8cd584d052ac781434785d07d12b8090): Fix Registry.hasPluginOfType
+- [#ec6411d](https://github.com/pydio/cells/commit/ec6411d64dee030e124c79fce15af72d9b31f785): Fix PutJob in mongo DAO
+- [#09521cc](https://github.com/pydio/cells/commit/09521ccb09135180e6bcc650cfd270a3bd1699a2): Adapt Chat textfield style
+- [#fa742a2](https://github.com/pydio/cells/commit/fa742a242cab9bcfb78c46d687bafe6d5e7ccb7b): Debug/logs
+- [#91a2f9b](https://github.com/pydio/cells/commit/91a2f9b74ebecae76f98ab6ea85aa5b46471d8b2): Fix SimpleLinkCard layout - Fix isRestApiPublicMethod function
+- [#5b9b0b0](https://github.com/pydio/cells/commit/5b9b0b07d60aaa654086a3d7bb7a0a9930b697f5): Special cases for hydra log messages
+- [#7b32cbf](https://github.com/pydio/cells/commit/7b32cbfb9fea33017decf9a3813e7ba78ef70701): Remove todo's - unused codes
+- [#33f356a](https://github.com/pydio/cells/commit/33f356a9d991e6c37d1128a0923b69217903e728): Re-implement WebRateLimiter (CELLS_WEB_RATE_LIMIT env var)
+- [#ded1c83](https://github.com/pydio/cells/commit/ded1c83b5e72322941c9b9ddf70cfdb2f600c19c): Re-enable port-based subRouter. Fix copy button on OOB Dialog
+- [#a9955e9](https://github.com/pydio/cells/commit/a9955e918e5532e0defbbd7793ec68f3cab3bfb3): Micro-fix for public users display label
+- [#3d089a9](https://github.com/pydio/cells/commit/3d089a91097279940e70a142a5c81526beb4dd18): Clean code
+- [#f556746](https://github.com/pydio/cells/commit/f55674610f97e56b8c9e26f85a99cf6557e5185d): HttpMux: PatternsProvider exposes DeregisterPattern Manage ChildrenRunner parameters when excluding sync only
+- [#a68a787](https://github.com/pydio/cells/commit/a68a787bda6a92170a1d2a7d434edc62e8e5e081): Add comments in api-services
+- [#d8b3d04](https://github.com/pydio/cells/commit/d8b3d04a11b59774ec88ad243cab3054c25f15d0): Fixes to services list page
+- [#d25b286](https://github.com/pydio/cells/commit/d25b2860687a11ee233cb26655309abe6b5a3084): Fix defaults for discovery port
+- [#338d8d7](https://github.com/pydio/cells/commit/338d8d76f6743a4366284154193f8740cd99ccbd): Fix cells ps
+- [#9b4d6f6](https://github.com/pydio/cells/commit/9b4d6f6d62f520673a85b38c98f46ace922210d9): DAO-ize session store and implement mysql driver. Leave securecookie as default.
