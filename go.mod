@@ -124,7 +124,7 @@ require (
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
 	gopkg.in/gorp.v1 v1.7.2
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
-	gopkg.in/yaml.v2 v2.4.0
+	gopkg.in/yaml.v3
 	k8s.io/apimachinery v0.21.1
 	k8s.io/klog/v2 v2.30.0 // indirect
 )
